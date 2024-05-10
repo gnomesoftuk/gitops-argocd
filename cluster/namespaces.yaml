@@ -4,5 +4,5 @@ kind: Namespace
 metadata:
   labels:
     org: web-team
-  name: nginx
+  name: web-team
 ---
