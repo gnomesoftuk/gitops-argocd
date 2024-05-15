@@ -9,7 +9,8 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: demoapp
+      tier: frontend
   strategy:
     type: RollingUpdate
     rollingUpdate:
