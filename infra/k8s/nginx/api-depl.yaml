@@ -4,7 +4,6 @@ metadata:
   labels:
     app: nginx
   name: nginx
-  namespace: web-team
 spec:
   replicas: 3
   selector:

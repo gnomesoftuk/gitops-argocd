@@ -1,8 +1,0 @@
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  labels:
-    org: web-team
-  name: web-team
----
