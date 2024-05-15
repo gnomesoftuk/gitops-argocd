@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
+    app: demoapp
+    tier: frontend
   name: nginx
 spec:
   replicas: 3
@@ -17,9 +18,13 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: demoapp
+        tier: frontend
     spec:
       containers:
       - image: nginx
         name: nginx
+        ports:
+          containerPort: 80
+          name: http
 status: {}
